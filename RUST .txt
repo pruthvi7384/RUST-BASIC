@@ -1,0 +1,57 @@
+** RUST **
+- version : rustc 1.75.0
+- C++ build in tool need before installation RUST Lan
+- rustup doc : get the documentation
+
+** Cargo **
+Command:
+- cargo build : compiles the current project
+- cargo check : analyzes the current project andreport errors, but don't build object files.
+- cargo run : Builds and executessrc/main.rs
+- cargo clean : Removes the target directory.
+- cargo update : Updates dependencies listed in Cargo.lock
+- cargo new : Creates a new cargo project.
+- cargo new project_name --bin : Create a binary crate 
+- cargo new project_name --lib : Create a library crate
+- cargo --version : To check the current version of cargo
+
+* Rust : https://www.youtube.com/watch?v=BpPEoZW5IiY&t=3691s 
+
+* Scope * : 
+- Range within a program for which an item is valid 
+- Global Scope : Accessible throughout the entire program.
+- Local Scope :
+	- Accessible only within particular function or block of code.
+	- Not accessible outside of that function or block.
+
+* Memory *
+- Component in a computer to store data and instruction for the processor to execute.
+- Random Access Memorry (RAM) is volatile, when power turned off all content are lost.
+- Two types of regions in RAM used by a program at runtime: Stack memory and heap memory.
+
+* The String Type *
+- All types covered so far were fixed size
+- String is mutable
+- String size can change at runtime
+- String stored on the stack with a pointer to the heap
+- alue of string is stored on the heap
+
+
+* Referance : & and get value *
+
+* String VS. &str *
+- A String is a heap-allocated string type that owns its contents and is mutable.
+- A &str is an immutable sequence of UTF-8 bytes in memory, it does not own the underlying data and is immutable.
+- Think of &str as a view on a sequence of characters (stored as UTF-8 bytes) in memory.
+
+* String Liteal *
+- A String literalis a sequence of characters enclosed in double quotes (")
+- Fixted size, compile-time known sequence of UTF-8 bytes
+- The type is '&' static str, which indicates the data is stored in static storage, meaning it is valid throughout the entire lifetime of the program
+- The data is hardcoded into the executable and stored in read-only memory, meaning they are immutable.
+
+* Slice *
+- The string slice world points to a sequence of characters stored on the heap.
+
+
+
